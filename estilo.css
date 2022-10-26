@@ -1,0 +1,150 @@
+*{
+    margin:0;
+
+}
+.htop{
+    width: 100%;
+    background-color: #333;
+    height: 30px;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    background: rgb(133, 133, 133);
+    padding: 10px;
+    align-items: center;
+    background-image: url(img/logo2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+.logo{
+    display: flex;
+
+}
+.logo img{
+    display: none;
+}
+.empresa{
+    color: rgb(0, 171, 151);
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    padding-right: 10px;
+    
+}
+.menu a:hover{
+    color:black;
+}
+
+@media (max-width: 1080px) {
+
+    .cabecera{
+        flex-direction: column;
+        background-image: none;
+
+    }
+    .empresa{
+        display: none;
+
+    }
+    .logo img{
+        display:flex;
+        height: 120px;
+    }
+
+}
+.pie{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(109, 109, 109);
+  
+}
+.social{
+  display:flex;
+    
+}
+.social .icon{
+  margin: 0 5px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position: relative;
+  z-index: 2;
+}
+.social .icon span{
+  height: 40px;
+  width: 40px;
+  display:block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.social .icon span i{
+  font-size:25px;
+  line-height:60px;
+}
+.social .icon .tool{
+  position:absolute;
+  top:0px;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color:white;
+  opacity:0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.social .icon:hover .tool{
+  opacity:1;
+  pointer-events: auto;
+  top:-60px;
+}
+.social .icon .tool:before{
+  position:absolute;
+  content:"";
+  height:15px;
+  width:15px;
+  bottom:-8px;
+  left:50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.social .icon:hover span,
+.social .icon:hover .tool{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.social .icon:hover span{
+  color: #fff;
+}
+.social .facebook:hover span,
+.social .facebook:hover .tool,
+.social .facebook:hover .tool:before{
+  background:#3B5999;
+}
+.social .twitter:hover span,
+.social .twitter:hover .tool,
+.social .twitter:hover .tool:before{
+  background:#46C1F6;
+}
+.social .github:hover span,
+.social .github:hover .tool,
+.social .github:hover .tool:before{
+  background:#333;
+}
+.social .youtube:hover span,
+.social .youtube:hover .tool,
+.social .youtube:hover .tool:before{
+  background:#de463b;
+}
