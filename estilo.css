@@ -63,6 +63,24 @@
     }
 
 }
+@media (max-width: 412px) {
+
+  .cabecera{
+      flex-direction: column;
+      background-image: none;
+      display: none
+
+  }
+  .empresa{
+      display: none;
+
+  }
+  .logo img{
+      display:flex;
+      height: 120px;
+  }
+
+}
 .pie{
   display: flex;
   justify-content: center;
