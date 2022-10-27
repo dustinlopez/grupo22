@@ -1,16 +1,20 @@
 *{
-    margin:0;
+    margin: 0 2em 0 2em;
+
 
 }
 .htop{
-    width: 100%;
     background-color: #333;
     height: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+
 }
 .cabecera{
     display: flex;
-    justify-content: space-around;
-    min-height: 70px;
+    justify-content: space-between;
+    height: 80px;
     background: rgb(133, 133, 133);
     padding: 10px;
     align-items: center;
@@ -40,6 +44,8 @@
     font-family: 'Teko', sans-serif;
     font-size: 25px;
     padding-right: 10px;
+    margin: 0%;
+    
     
 }
 .menu a:hover{
@@ -81,6 +87,133 @@
   }
 
 }
+
+/**Carrusel**/
+#carrusel-caja {
+  animation: automatizacion 15s infinite linear;
+  transition: all 0.75s ease;
+
+  max-height: 300px;
+  width: 300%;
+
+}
+
+#carrusel-contenido {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  
+  background-color: rgb(65, 61, 121);
+
+  
+}
+
+.imagenes{
+  height: 60%;
+  max-width: 60%;
+}
+
+
+.carrusel-elemento {
+  float: left;
+  width: 33.333%;
+  margin: 0%;
+}
+
+
+
+@-moz-keyframes automatizacion {
+  0% {
+      margin-left: 0;
+  }
+
+  30% {
+      margin-left: 0;
+  }
+
+  35% {
+      margin-left: -100%;
+  }
+
+  65% {
+      margin-left: -100%;
+  }
+
+  70% {
+      margin-left: -200%;
+  }
+
+  95% {
+      margin-left: -200%;
+  }
+
+  100% {
+      margin-left: 0;
+  }
+}
+
+@-webkit-keyframes automatizacion {
+  0% {
+      margin-left: 0;
+  }
+
+  30% {
+      margin-left: 0;
+  }
+
+  35% {
+      margin-left: -100%;
+  }
+
+  65% {
+      margin-left: -100%;
+  }
+
+  70% {
+      margin-left: -200%;
+  }
+
+  95% {
+      margin-left: -200%;
+  }
+
+  100% {
+      margin-left: 0;
+  }
+}
+
+@keyframes automatizacion {
+  0% {
+      margin-left: 0;
+  }
+
+  30% {
+      margin-left: 0;
+  }
+
+  35% {
+      margin-left: -100%;
+  }
+
+  65% {
+      margin-left: -100%;
+  }
+
+  70% {
+      margin-left: -200%;
+  }
+
+  95% {
+      margin-left: -200%;
+  }
+
+  100% {
+      margin-left: 0;
+  }
+/**Carrusel**/
+
+}
 .pie{
   display: flex;
   justify-content: center;
@@ -89,6 +222,8 @@
 }
 .social{
   display:flex;
+  margin: 0%;
+  
     
 }
 .social .icon{
@@ -107,6 +242,8 @@
   display:block;
   text-align: center;
   padding-bottom: 20px;
+
+  margin: 0%;
 }
 .social .icon span i{
   font-size:25px;
