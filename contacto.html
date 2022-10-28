@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <form method="post">
+            <input type="text" placeholder="Nombre" id="nombre" autocomplete="off">
+            <input type="email" placeholder="Email" id="email" autocomplete="off">
+            <input type="text" placeholder="Asunto" id="asunto" autocomplete="off">
+            <textarea id="mensaje" cols="30" rows="10" Placeholder="Mensaje" ></textarea>
+            <button id="btn_enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script >
+    var btn_enviar = document.getElementById('btn_enviar');
+    btn_enviar.addEventListener('click',function(e){
+        e.preventDefault()
+        var nombre = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+        var asunto = document.getElementById("asunto").value;
+        var mensaje = document.getElementById("mensaje").value;
+        var cuerpo =  nombre + ' Gracias por contactarnos';
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "lopez.nestor0000@gmail.com",
+        Password : "4561475D79E37E9359782035F2D570031233",
+        To : email,
+        From : 'lopez.nestor0000@gmail.com',
+        Subject : asunto,
+        Body : cuerpo
+    }).then(
+  message => alert(message)
+);
+    })
+</script>
+</html>
