@@ -383,6 +383,12 @@ input, textarea{
       display:flex;
       height: 90px;
   }
+  .contacto{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .persona {
     font-size: small;
     flex-direction: column-reverse;
