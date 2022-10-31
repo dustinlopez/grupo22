@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Predios</title>
+</head>
+<body>
+    
+  <header class="cabecera">
+    <div class="logo">
+        <h2 class="empresa">Grupo 22 Logística</h2>
+        <img src="img/logo.png" alt="Logo" height="30px">
+        <button class="hamburguesa">≡</button>
+    </div>
+    <nav class="menu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="company.html" class="nav-link">Compañia</a>
+        <a href="predios.html" class="nav-link">Predios</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+    <nav class="menu_h">
+      <ul class="menu_res">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="company.html" class="nav-link">Compañia</a></li>
+        <li><a href="predios.html" class="nav-link">Predios</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section id="predios">
+      <h1 class="titulo_p">PREDIOS</h1>
+      
+      <div class="contenedor_p">
+          <div class="pilar" style="background-image: url(img/predios/pilar.jpg)"  onclick="cambiarmapa(1)">
+            <div class="zona" >
+              <h3>PILAR</h3>
+            </div>
+          </div>
+          <div class="matanza" style="background-image: url(img/predios/matanza.jpeg)" onclick="cambiarmapa(2)">
+            <div class="zona">
+              <h3>LA MATANZA</h3>
+            </div>
+
+          </div>
+          <div class="moreno" style="background-image: url(img/predios/moreno.jpg)" onclick="cambiarmapa(3)">
+            <div class="zona">
+              <h3>MORENO</h3>
+            </div>
+
+          </div>
+          <div class="canuelas" style="background-image: url(img/predios/canuelas.jpg)" onclick="cambiarmapa(4)">
+            <div class="zona">
+              <h3>CAÑUELAS</h3>
+            </div>
+
+          </div>
+      </div>
+      <iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1K7AjIuyStZWzv0_-AIHa89JE6hT-Ow0&ehbc=2E312F" ></iframe>
+    </section>
+
+    <footer class="pie">
+      <div class="social">
+        <div class="icon facebook">
+          <div class="tool">Facebook</div>
+          <span><i onclick="window.location.href='https://facebook.com';" class="fab fa-facebook-f"></i></span>
+        </div>
+      
+        <div class="icon twitter">
+          <div class="tool">Twitter</div>
+          <span><i onclick="window.location.href='https://twitter.com';" class="fab fa-twitter"></i></span>
+        </div>
+        <div class="icon github" >
+          <div class="tool">Github</div>
+          <span><i onclick="window.location.href='https://github.com/dustinlopez/grupo22';" class="fab fa-github"></i></span>
+        </div>
+        
+        <div class="icon youtube">
+          <div class="tool">YouTube</div>
+          <span><i onclick="window.location.href='https://youtube.com';" class="fab fa-youtube"></i></span>
+        </div>
+      </div>
+    </footer>
+</body>
+
+<script src="scripts.js">
+
+</script>
+</html>

@@ -5,67 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="carrousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Inicio</title>
 </head>
 <body>
-    <div class="htop">
-      
-    </div>
+    
     <header class="cabecera">
         <div class="logo">
             <h2 class="empresa">Grupo 22 Logística</h2>
             <img src="img/logo.png" alt="Logo" height="30px">
+            <button class="hamburguesa">≡</button>
         </div>
         <nav class="menu">
-            <a href="" class="nav-link">Inicio</a>
-            <a href="" class="nav-link">Compañia</a>
-            <a href="" class="nav-link">Predios</a>
-            <a href="" class="nav-link">Contacto</a>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="company.html" class="nav-link">Compañia</a>
+            <a href="predios.html" class="nav-link">Predios</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <nav class="menu_h">
+          <ul class="menu_res">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="company.html" class="nav-link">Compañia</a></li>
+            <li><a href="predios.html" class="nav-link">Predios</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+          </ul>
         </nav>
     </header>
-    <section class="seccion1">
-      <div id="carrusel-contenido">
-        <div id="carrusel-caja">
-            <div class="carrusel-elemento">
-                <img class="imagenes" src="img/predio1.jpg" >
-            </div>
-            <div class="carrusel-elemento">   
-                <img class="imagenes" src="img/logo.svg">
-            </div>
-            <div class="carrusel-elemento">   
-                <img class="imagenes" src="img/logo2.png">                        
-            </div>
-        </div>
-    </div>
+    <section class="carrusel">
+      <ul>
+        <li><img class="imagenes" src="img/carrusel/1.jpg" ></li>
+        <li><img class="imagenes" src="img/carrusel/2.jpg" ></li>
+        <li><img class="imagenes" src="img/carrusel/3.jpg" ></li>
+      </ul>
     </section>
 
     <footer class="pie">
       <div class="social">
         <div class="icon facebook">
           <div class="tool">Facebook</div>
-          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i onclick="window.location.href='https://facebook.com';" class="fab fa-facebook-f"></i></span>
         </div>
       
         <div class="icon twitter">
           <div class="tool">Twitter</div>
-          <span><i class="fab fa-twitter"></i></span>
+          <span><i onclick="window.location.href='https://twitter.com';" class="fab fa-twitter"></i></span>
         </div>
-        <div class="icon github">
-          <div class="tool">github</div>
-          <span><i class="fab fa-github"></i></span>
+        <div class="icon github" >
+          <div class="tool">Github</div>
+          <span><i onclick="window.location.href='https://github.com/dustinlopez/grupo22';" class="fab fa-github"></i></span>
         </div>
+        
         <div class="icon youtube">
           <div class="tool">YouTube</div>
-          <span><i class="fab fa-youtube"></i></span>
+          <span><i onclick="window.location.href='https://youtube.com';" class="fab fa-youtube"></i></span>
         </div>
       </div>
     </footer>
 </body>
+<script src="scripts.js"></script>
 </html>
